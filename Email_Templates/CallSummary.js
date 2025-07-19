@@ -4,7 +4,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const chokidar = require("chokidar");
 
-const subject = `Invoice {{#each invoiceData}}#{{invoiceNumber}} {{/each}}Client: {{contactCompanyName}}, Call Summary`;
+const subject = `Client: {{contactCompanyName}} - Call Summary`;
 
 const emailMessage = `
 <!DOCTYPE html>
